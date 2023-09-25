@@ -3,7 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lesson 7</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <svg display="none">
+            <symbol
+              id="burger-menu"
+              fill="currentColor"
+              width="130"
+              height="120"
+            >
+              <rect
+                class="rect1"
+                width="120"
+                height="20"
+                x="10"
+                y="10"
+                rx="12"
+              />
+              <rect
+                class="rect2"
+                width="120"
+                height="20"
+                x="10"
+                y="50"
+                rx="12"
+              />
+              <rect
+                class="rect3"
+                width="120"
+                height="20"
+                x="10"
+                y="90"
+                rx="12"
+              />
+            </symbol>
+          </svg>
+          <a class="burger-link" href="#">
+            <svg>
+              <use href="#burger-menu" />
+            </svg>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__ul">
+              <li class="header__li">
+                <a href="" class="header__link">First</a>
+              </li>
+              <li class="header__li">
+                <a href="" class="header__link">Second</a>
+              </li>
+              <li class="header__li">
+                <a href="" class="header__link">Third</a>
+              </li>
+              <li class="header__li">
+                <a href="" class="header__link">Fourth</a>
+              </li>
+              <li class="header__li">
+                <a href="" class="header__link">Fifth</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="toast">
+        <div class="toast__header">
+          <span class="toast__name"></span>
+          <button class="close-button">X</button>
+        </div>
+        <div class="toast__message"></div>
+      </div>
+    </main>
+  </body>
 </html>

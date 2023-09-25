@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh; /* Высота равна высоте видимой области браузера */
+  overflow: hidden; /* Скрыть вертикальную прокрутку */
+}
+
+.header__nav {
+  display: none;
+  background-color: orangered;
+  text-align: center;
+}
+
+.to-exit rect {
+  transition-property: transform, all;
+  transition-duration: 4s, 1s;
+}
+
+.to-exit rect:first-child {
+  transform: rotate(45deg);
+  transform-origin: center;
+  y: 44px;
+}
+
+.to-exit rect:nth-child(2) {
+  display: none;
+}
+
+.to-exit rect:last-child {
+  transform: rotate(-45deg);
+  transform-origin: center;
+  y: 52px;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+  margin: 0;
+  background-color: #2d0ce3;
+}
+
+.toast {
+  background-color: #333;
+  color: #fff;
+  width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.toast.show {
+  transform: translateY(0px);
+}
+
+.toast__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #444;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.toast__message {
+  padding: 10px;
+}
